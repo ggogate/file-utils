@@ -1,0 +1,12 @@
+body{
+  font: 9pt sans-serif;
+}
+h2{
+  color: #2222AA;
+}
+.dataView{
+  font-family: monospace;
+}
+.cell{
+  padding: 5px 5px 5px 5px;
+}

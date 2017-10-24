@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet"/>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div id="header" ><h2>File Viewer Utility</h2></div>
+  <hr/>
+  <div class="fileImportForm">
+    <h3>Import file</h3>
+    <form method="get" action="search">
+      <table border="0" >
+        <tr>
+          <td class="cell">File:&nbsp;<input type="file" value="Upload"/></td>
+          <td> View:
+            <select id="layout" onchange="toggleLayout(this)">
+              <option value="h">Horizontal</option>
+              <option value="v">Vertical</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Or URI<input type="text" id="fileUri"/></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="cell">CopyBook:&nbsp;<input type="file" value="Upload"/></td>
+        </tr>
+        <tr>
+          <td>Or URI<input type="text" id="fileUri"/></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Import"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <hr/>
+  <div id="data" class="dataView">
+    Hello
+  </div>
+</body>
+
+</html>
